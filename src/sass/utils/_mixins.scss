@@ -1,0 +1,59 @@
+@mixin article-heading{
+  font-size: 37px;
+  color: $color-heading;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  @include tablet-portrait{
+    font-size: 34px;
+  }
+  @include mobile{
+    font-size: 25px;
+  }  
+}
+
+@mixin aside-heading{
+  font-size: 24px;
+  color: $color-heading;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15px;
+  @include tablet-portrait{
+    font-size: 21px;
+  }
+  @include mobile{
+    font-size: 18px;
+  }
+}
+
+@mixin text-regular{
+  font-size: 14px;
+  color: $color-text;
+  line-height: 1.5;
+  text-align: left;
+  @include mobile{
+    text-align: justify;
+  }
+}
+
+@mixin button{
+  font-size: 14px;
+  background-color: $color-pink;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  border: none;
+  color: $color-white;
+  letter-spacing: 2px;
+  transition: .15s;
+  cursor: pointer;
+  &:active{
+    transform: scale(.95);
+  }
+  &:focus{
+    border-color: $color-pink;
+    outline: none !important;
+    box-shadow: 0 0 3px $color-pink;
+  }
+
+}
+

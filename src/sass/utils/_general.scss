@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #e6e6e6;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.warn{
+  color: #ff0000!important;
+  font-size: 12px!important;
+  margin-bottom: 0!important;
+  &:before{
+    content: "*";
+  }
+}
+
+.active{
+  display: block!important;
+  width: 100%;
+}
